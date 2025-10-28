@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "title": "Signed Print \u2014 Heron (A3)",
+      "price": "CA$60",
+      "thumb": "images/sample-3.png",
+      "description": "Matte archival paper. Ships from Toronto.",
+      "checkout_url": "https://buy.stripe.com/YOUR_CHECKOUT_LINK",
+      "inventory": "in_stock"
+    },
+    {
+      "title": "Sticker Pack \u2014 Earth\u2019s Portal",
+      "price": "CA$15",
+      "thumb": "images/sample-1.png",
+      "description": "5 premium stickers.",
+      "checkout_url": "https://buy.stripe.com/YOUR_CHECKOUT_LINK",
+      "inventory": "low"
+    },
+    {
+      "title": "Original \u2014 Eye for an Eye",
+      "price": "SOLD",
+      "thumb": "images/sample-2.png",
+      "description": "Original piece (unavailable).",
+      "checkout_url": "#",
+      "inventory": "out_of_stock"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+:root{
+  --bg:#0e0e0e; --fg:#f7f7f7; --muted:#b9b9b9; --accent:#ffffff;
+  --maxw:1100px; --grid: minmax(240px,1fr); --sans: ui-sans-serif,system-ui,Inter,Arial;
+  --radius:12px;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;background:var(--bg);color:var(--fg);font-family:var(--sans);line-height:1.6}
+a{color:inherit;text-decoration:none}
+img,video{max-width:100%;display:block}
+.container{max-width:var(--maxw);margin:0 auto;padding:24px}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:16px;padding:16px 24px;border-bottom:1px solid #1f1f1f;position:sticky;top:0;background:#0e0e0ecc;backdrop-filter:blur(6px);z-index:10}
+.nav .links{display:flex;gap:20px}
+.nav a{opacity:.9} .nav a:hover{opacity:1;text-decoration:underline}
+.hero{display:grid;gap:8px;justify-items:start;padding:28px 24px;border-bottom:1px solid #1f1f1f}
+.tagline{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,var(--grid));gap:18px}
+.card{border:1px solid #222;border-radius:var(--radius);overflow:hidden;background:#111;transition:transform .08s ease, box-shadow .08s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 16px #00000066}
+.card .thumb{aspect-ratio:4/5;object-fit:cover;background:#0b0b0b}
+.card .meta{padding:12px 14px;color:#d2d2d2;font-size:.98rem}
+.badge{font-size:.85rem;color:#a9a9a9}
+.price{font-weight:600}
+.pager{display:flex;gap:8px;justify-content:center;margin:22px 0}
+.pager button{background:#171717;border:1px solid #2a2a2a;color:var(--fg);padding:8px 12px;border-radius:10px;cursor:pointer}
+.pager button[disabled]{opacity:.4;cursor:not-allowed}
+.page h1{margin:0 0 16px}
+.split{display:grid;gap:24px}
+@media(min-width:900px){.split{grid-template-columns:1.2fr .8fr}}
+.form label{display:block;margin:10px 0 6px;color:var(--muted)}
+.input, textarea{width:100%;padding:12px;border-radius:10px;border:1px solid #2a2a2a;background:#0c0c0c;color:var(--fg)}
+.btn{margin-top:12px;background:#fff;color:#000;padding:10px 14px;border:0;border-radius:10px;cursor:pointer}
+.footer{border-top:1px solid #1f1f1f;color:#888;padding:18px 24px;text-align:center}
+
+/* Lightbox */
+.lightbox-backdrop{position:fixed;inset:0;background:#000000e6;display:none;align-items:center;justify-content:center;z-index:999}
+.lightbox-backdrop.open{display:flex}
+.lightbox-frame{max-width:min(96vw,1200px);max-height:92vh;border-radius:14px;overflow:hidden;background:#000;border:1px solid #333;position:relative}
+.lightbox-frame img,.lightbox-frame video{max-width:100%;max-height:92vh}
+.lightbox-close{position:absolute;top:8px;right:8px;border:0;background:#ffffff;cursor:pointer;border-radius:10px;padding:6px 10px}
+.lightbox-caption{position:absolute;left:0;right:0;bottom:0;background:linear-gradient(transparent,#000a);color:#fff;padding:10px 14px;font-size:.95rem}
+
+/* Inventory pill */
+.pill{display:inline-block;padding:3px 8px;border-radius:999px;border:1px solid #2a2a2a;margin-left:8px;font-size:.8rem}
+.pill.instock{color:#abf7b1;border-color:#2c5931}
+.pill.low{color:#f7e4ab;border-color:#5a4b2c}
+.pill.oos{color:#f7abab;border-color:#5a2c2c}

@@ -1,0 +1,49 @@
+<!doctype html><html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Julius — Illustration & Design</title>
+<link rel="stylesheet" href="assets/styles.css">
+<link rel="icon" href="images/favicon-512.png" type="image/png">
+<link rel="apple-touch-icon" href="images/favicon-512.png">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Julius — Illustration & Design">
+<meta property="og:description" content="Character design, illustration & animation studies.">
+<meta property="og:image" content="images/og-default.png">
+<meta property="og:url" content="https://juliusx.com/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Julius — Illustration & Design">
+<meta name="twitter:description" content="Character design, illustration & animation studies.">
+<meta name="twitter:image" content="images/og-default.png">
+</head>
+<body>
+<header class="nav">
+  <div><a href="index.html"><strong id="sitename">Julius</strong></a><span class="badge" id="tag"></span></div>
+  <nav class="links" id="navlinks"></nav>
+</header>
+<script>
+fetch('./content/site.json').then(r=>r.json()).then(s=>{
+  document.getElementById('sitename').textContent = s.site_name || 'Julius';
+  document.getElementById('tag').textContent = "  ·  " + (s.tagline || 'Illustration & Design');
+  document.getElementById('navlinks').innerHTML = (s.nav||[]).map(n=>`<a href="${n.href}">${n.label}</a>`).join('');
+});
+</script>
+  <header class="hero container">
+    <h1>Character Design</h1>
+    <div class="tagline">Illustrations & studies</div>
+  </header>
+  <main class="container">
+    <section id="gallery" class="grid"></section>
+    <div class="pager"></div>
+  </main>
+<footer class="footer">
+  <div>© <span id="year"></span> <span id="footname"></span>. All rights reserved.</div>
+</footer>
+<script>
+fetch('./content/site.json').then(r=>r.json()).then(s=>{
+  document.getElementById('footname').textContent = s.site_name || 'Julius';
+  document.getElementById('year').textContent = new Date().getFullYear();
+});
+</script>
+<script src="assets/script.js"></script>
+<script>initHome();</script>
+</body></html>

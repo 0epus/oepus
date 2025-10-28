@@ -1,0 +1,32 @@
+{
+  "site_name": "Julius",
+  "tagline": "Illustration & Design",
+  "nav": [
+    {
+      "label": "Character Design",
+      "href": "index.html"
+    },
+    {
+      "label": "Shop",
+      "href": "shop.html"
+    },
+    {
+      "label": "About",
+      "href": "about.html"
+    },
+    {
+      "label": "Contact",
+      "href": "contact.html"
+    }
+  ],
+  "socials": [
+    {
+      "label": "Instagram",
+      "href": "https://instagram.com/yourhandle"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com/yourhandle"
+    }
+  ]
+}

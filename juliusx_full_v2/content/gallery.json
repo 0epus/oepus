@@ -1,0 +1,46 @@
+{
+  "items": [
+    {
+      "type": "image",
+      "title": "Olympic Training",
+      "thumb": "images/sample-1.png",
+      "src": "images/sample-1.png",
+      "caption": "Graphite + digital paint study",
+      "tags": [
+        "character",
+        "study"
+      ]
+    },
+    {
+      "type": "video",
+      "title": "Run Cycle \u2014 WIP",
+      "thumb": "images/sample-2.png",
+      "src": "media/run-cycle.mp4",
+      "caption": "24fps MP4 preview of animation test",
+      "tags": [
+        "animation",
+        "study"
+      ]
+    },
+    {
+      "type": "youtube",
+      "title": "Demo Reel",
+      "thumb": "images/sample-3.png",
+      "src": "dQw4w9WgXcQ",
+      "caption": "2025 reel highlights",
+      "tags": [
+        "reel"
+      ]
+    },
+    {
+      "type": "vimeo",
+      "title": "Process Breakdown",
+      "thumb": "images/sample-4.png",
+      "src": "76979871",
+      "caption": "Time-lapse",
+      "tags": [
+        "process"
+      ]
+    }
+  ]
+}
